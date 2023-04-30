@@ -7,9 +7,9 @@ class CategoryCard extends StatelessWidget {
   Key key;
 
   CategoryCard({
-    this.key,
-    @required this.name,
-    @required this.picture,
+    required this.key,
+    required this.name,
+    required this.picture,
   });
 
   @override

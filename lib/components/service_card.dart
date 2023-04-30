@@ -13,14 +13,14 @@ class ServiceCard extends StatelessWidget {
   final Key key;
 
   ServiceCard({
-    this.name,
-    this.picture,
-    this.rating,
-    this.foodType,
-    this.distance,
-    this.deliveryTime,
-    this.deliveryPrice,
-    this.key,
+    required this.name,
+    required this.picture,
+    required this.rating,
+    required this.foodType,
+    required this.distance,
+    required this.deliveryTime,
+    required this.deliveryPrice,
+    required this.key,
   });
 
   Widget _dotSeparator() {
@@ -46,7 +46,7 @@ class ServiceCard extends StatelessWidget {
           elevation: 2.5,
           child: Container(
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.grey[200]),
+              border: Border.all(color: Colors.grey.shade500),
               borderRadius: BorderRadius.all(
                 Radius.circular(4),
               ),
@@ -64,7 +64,7 @@ class ServiceCard extends StatelessWidget {
                         shape: BoxShape.circle,
                         border: Border.all(
                           width: 1.0,
-                          color: Colors.grey[200],
+                          color: Colors.grey.shade200,
                         ),
                       ),
                       child: ClipOval(
