@@ -1,21 +1,22 @@
 name: ifoodclone
 description: A new Flutter project.
 
-version: 1.0.0+1
+version: 0.0.0
 
 environment:
-  sdk: ">=2.2.2 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^0.1.2
-  cached_network_image: ^2.0.0-rc
+  cupertino_icons: ^1.0.5
+  cached_network_image: ^3.2.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+    version: ^0.0.0
 
 
 flutter:

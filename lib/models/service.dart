@@ -10,13 +10,13 @@ class Service {
   final String deliveryPrice;
 
   Service({
-    this.name,
-    this.picture,
-    this.rating,
-    this.foodType,
-    this.distance,
-    this.deliveryPrice,
-    this.deliveryTime,
+    required this.name,
+    required this.picture,
+    required this.rating,
+    required this.foodType,
+    required this.distance,
+    required this.deliveryPrice,
+    required this.deliveryTime,
   });
 
   factory Service.fromJson(jsonData) {
