@@ -7,9 +7,9 @@ class HighlightCard extends StatelessWidget {
   final String tip;
 
   HighlightCard({
-    required this.key,
-    required this.picture,
-    required this.tip,
+    this.key,
+    @required this.picture,
+    @required this.tip,
   });
 
   @override

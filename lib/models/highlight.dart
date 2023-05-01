@@ -3,7 +3,7 @@ class Highlight {
   final String tip;
   final String picture;
 
-  Highlight({required this.title, required this.tip, required this.picture});
+  Highlight({this.title, this.tip, this.picture});
 
   factory Highlight.fromJson(jsonData) {
     return Highlight(

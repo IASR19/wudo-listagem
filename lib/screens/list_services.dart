@@ -84,7 +84,7 @@ class _ListServicesState extends State<ListServices> {
 
   Future<List<Service>> _loadServices() async {
     List<dynamic> json =
-        jsonDecode(await rootBundle.loadString('assets/restaurants.json'));
+        jsonDecode(await rootBundle.loadString('assets/services.json'));
     List<Service> services = [];
 
     for (var service in json) {
@@ -171,7 +171,7 @@ class _ListServicesState extends State<ListServices> {
             deliveryPrice: service.deliveryPrice,
             deliveryTime: service.deliveryTime,
             distance: service.distance,
-            foodType: service.foodType,
+            serviceType: service.serviceType,
             rating: service.rating,
           );
         },
