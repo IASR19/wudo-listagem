@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ifoodclone/screens/list_services.dart';
+import 'package:wudo/screens/list_services.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'IFood',
+      title: 'Wudo',
       color: Colors.white,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
