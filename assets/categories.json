@@ -1,46 +1,42 @@
 [
   {
     "picture": "https://cdn.pixabay.com/photo/2016/10/22/20/55/makeup-brushes-1761648_1280.jpg",
-    "name": "Maquiagem"
+    "name": "Beleza"
   },
   {
     "picture": "https://cdn.pixabay.com/photo/2017/12/11/20/03/spanner-3013129_1280.jpg",
-    "name": "Mecânico"
-  },
-  {
-    "picture": "https://cdn.pixabay.com/photo/2015/07/07/11/36/haircut-834280_1280.jpg",
-    "name": "Cabeleleiro e Barbeiro"
-  },
-  {
-    "picture": "https://cdn.pixabay.com/photo/2017/08/05/13/13/people-2583493_1280.jpg",
-    "name": "Manicure e Pedicure"
+    "name": "Manutenção"
   },
   {
     "picture": "https://images.pexels.com/photos/7210524/pexels-photo-7210524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    "name": "Passeador de Cães"
+    "name": "Animais"
   },
   {
     "picture": "https://images.pexels.com/photos/5905918/pexels-photo-5905918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    "name": "Aulas particulares"
+    "name": "Aulas"
   },
   {
     "picture": "https://cdn.pixabay.com/photo/2018/06/05/10/03/cake-3455114_1280.jpg",
-    "name": "Confeitaria"
+    "name": "Culinária"
   },
   {
-    "picture": "https://cdn.pixabay.com/photo/2016/08/23/21/00/yarn-1615524_1280.jpg",
-    "name": "Costura e reparos"
+    "picture": "https://cdn.pixabay.com/photo/2014/07/08/14/33/brushes-387545_1280.jpg",
+    "name": "Artesanato"
+  },
+  {
+    "picture": "https://cdn.pixabay.com/photo/2017/04/26/10/38/sewing-2262286_1280.jpg",
+    "name": "Roupas"
   },
   {
     "picture": "https://images.pexels.com/photos/5691820/pexels-photo-5691820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    "name": "Babá"
+    "name": "Crianças"
   },
   {
     "picture": "https://images.pexels.com/photos/8102677/pexels-photo-8102677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    "name": "Edição de vídeos"
+    "name": "Mídia"
   },
   {
     "picture": "https://images.pexels.com/photos/1309240/pexels-photo-1309240.jpeg",
-    "name": "Músico e Bandas"
+    "name": "Música"
   }
 ]
