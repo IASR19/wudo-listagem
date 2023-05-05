@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'IFood',
+      title: 'WuDo',
       color: Colors.white,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
