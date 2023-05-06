@@ -1,50 +1,42 @@
 [
   {
-    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_low/discoveries/19C1-lanches-v2.jpg",
-    "name": "Lanches"
+    "picture": "https://cdn.pixabay.com/photo/2016/10/22/20/55/makeup-brushes-1761648_1280.jpg",
+    "name": "Beleza"
   },
   {
-    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_low/discoveries/19C1-pizza.jpg",
-    "name": "Pizza"
+    "picture": "https://cdn.pixabay.com/photo/2017/12/11/20/03/spanner-3013129_1280.jpg",
+    "name": "Manutenção"
   },
   {
-    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_low/discoveries/19C1-japonesa.jpg",
-    "name": "Japonesa"
+    "picture": "https://images.pexels.com/photos/7210524/pexels-photo-7210524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "name": "Animais"
   },
   {
-    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_low/discoveries/19C1-carnes.jpg",
-    "name": "Carnes"
+    "picture": "https://images.pexels.com/photos/5905918/pexels-photo-5905918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "name": "Aulas"
   },
   {
-    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_low/discoveries/19C1-acai.jpg",
-    "name": "Açaí"
+    "picture": "https://cdn.pixabay.com/photo/2018/06/05/10/03/cake-3455114_1280.jpg",
+    "name": "Culinária"
   },
   {
-    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_low/discoveries/19C1-cafeteria.jpg",
-    "name": "Cafeterias"
+    "picture": "https://cdn.pixabay.com/photo/2014/07/08/14/33/brushes-387545_1280.jpg",
+    "name": "Artesanato"
   },
   {
-    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_low/discoveries/19C1-doces-e-bolos.jpg",
-    "name": "Doces & Bolos"
+    "picture": "https://cdn.pixabay.com/photo/2017/04/26/10/38/sewing-2262286_1280.jpg",
+    "name": "Roupas"
   },
   {
-    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_low/discoveries/19C1-salgados.jpg",
-    "name": "Salgados"
+    "picture": "https://images.pexels.com/photos/5691820/pexels-photo-5691820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "name": "Crianças"
   },
   {
-    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_low/discoveries/19C1-bebidas.jpg",
-    "name": "Bebidas"
+    "picture": "https://images.pexels.com/photos/8102677/pexels-photo-8102677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "name": "Mídia"
   },
   {
-    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_low/discoveries/19C1-saudavel-v2.jpg",
-    "name": "Saudável"
-  },
-  {
-    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_low/discoveries/19C1-brasileira-v2.jpg",
-    "name": "Brasileira"
-  },
-  {
-    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_low/discoveries/19C1-comida-rapida.jpg",
-    "name": "Cozinha Rápida"
+    "picture": "https://images.pexels.com/photos/1309240/pexels-photo-1309240.jpeg",
+    "name": "Música"
   }
 ]

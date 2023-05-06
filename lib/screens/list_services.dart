@@ -20,7 +20,6 @@ class ListServices extends StatefulWidget {
 class _ListServicesState extends State<ListServices> {
   bool _loading = false;
   List<Category> _categories = [];
-  List<Highlight> _highlights = [];
   List<Service> _services = [];
 
   @override
@@ -36,23 +35,18 @@ class _ListServicesState extends State<ListServices> {
     });
 
     List<Category> categories = [];
-    List<Highlight> highlights = [];
     List<Service> services = [];
 
     if (_categories.length < 1) {
       categories = await _loadCategories();
     }
 
-    if (_highlights.length < 1) {
-      highlights = await _loadHighlights();
-    }
     if (_services.length < 1) {
       services = await _loadServices();
     }
 
     setState(() {
       _categories = categories.length > 1 ? categories : _categories;
-      _highlights = highlights.length > 1 ? highlights : _highlights;
       _services = services.length > 1 ? services : _services;
       _loading = false;
     });
@@ -70,18 +64,6 @@ class _ListServicesState extends State<ListServices> {
     return categories;
   }
 
-  Future<List<Highlight>> _loadHighlights() async {
-    List<dynamic> json =
-        jsonDecode(await rootBundle.loadString('assets/highlights.json'));
-    List<Highlight> highlights = [];
-
-    for (var category in json) {
-      highlights.add(Highlight.fromJson(category));
-    }
-
-    return highlights;
-  }
-
   Future<List<Service>> _loadServices() async {
     List<dynamic> json =
         jsonDecode(await rootBundle.loadString('assets/services.json'));
@@ -92,29 +74,6 @@ class _ListServicesState extends State<ListServices> {
     }
 
     return services;
-  }
-
-  Widget _buildHighlights() {
-    return Container(
-      height: 190.0,
-      color: Colors.white,
-      child: Padding(
-        padding: const EdgeInsets.only(top: 10, left: 10, bottom: 10),
-        child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          itemCount: _highlights.length,
-          itemBuilder: (BuildContext context, int index) {
-            Highlight highlight = _highlights[index];
-
-            return HighlightCard(
-              key: Key('${highlight.title}_${highlight.tip}'),
-              tip: highlight.tip,
-              picture: highlight.picture,
-            );
-          },
-        ),
-      ),
-    );
   }
 
   Widget _buildCategories() {
@@ -299,9 +258,6 @@ class _ListServicesState extends State<ListServices> {
                     ),
                   )
                 else ...[
-                  SliverToBoxAdapter(
-                    child: _buildHighlights(),
-                  ),
                   SliverToBoxAdapter(
                     child: _buildCategories(),
                   ),
