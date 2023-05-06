@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Oficina do Paulinho Loko",
+    "picture": "https://drive.google.com/file/d/18GibnSk6QxZjrtlA6_1juHprwQex12aP/view?usp=sharing",
+    "rating": "4.5",
+    "serviceType": "Italiana",
+    "distance": "0,6 km",
+    "deliveryTime": "35-45 min",
+    "deliveryPrice": "Entrega R$ 5.90"
+  },
+  {
+    "name": "Oriental Light",
+    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_thumbnail/logosgde/fb6fe86f-7f5e-4f4d-a074-9d119b03a0dc/201906241225_wDe9_i.jpg",
+    "rating": "Novo!",
+    "serviceType": "Saudável",
+    "distance": "0,4 km",
+    "deliveryTime": "45-55 min",
+    "deliveryPrice": "Entrega R$ 6.00"
+  },
+  {
+    "name": "Santo Grau Bebidas",
+    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_thumbnail/logosgde/201902091123_f042d49a-92b1-489c-98c5-1e72f30538b4.jpg",
+    "rating": "4.9",
+    "serviceType": "Bebidas",
+    "distance": "0,8 km",
+    "deliveryTime": "50-60 min",
+    "deliveryPrice": "Entrega Grátis"
+  },
+  {
+    "name": "Paladare",
+    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_thumbnail/logosgde/201906261754_22d601f8-7f8e-4850-acd7-eb8cf785376c.png",
+    "rating": "Novo!",
+    "serviceType": "Italiana",
+    "distance": "0,5 km",
+    "deliveryTime": "50-60 min",
+    "deliveryPrice": "Entrega R$ 7.00"
+  }
+]

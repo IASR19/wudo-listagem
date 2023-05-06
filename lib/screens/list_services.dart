@@ -2,11 +2,13 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:ifoodclone/components/category_card.dart';
-import 'package:ifoodclone/components/service_card.dart';
-import 'package:ifoodclone/constants.dart';
-import 'package:ifoodclone/models/category.dart';
-import 'package:ifoodclone/models/service.dart';
+import 'package:wudo/components/category_card.dart';
+import 'package:wudo/components/highlight_card.dart';
+import 'package:wudo/components/service_card.dart';
+import 'package:wudo/constants.dart';
+import 'package:wudo/models/category.dart';
+import 'package:wudo/models/highlight.dart';
+import 'package:wudo/models/service.dart';
 
 class ListServices extends StatefulWidget {
   static String id = 'list_services';
@@ -64,7 +66,7 @@ class _ListServicesState extends State<ListServices> {
 
   Future<List<Service>> _loadServices() async {
     List<dynamic> json =
-        jsonDecode(await rootBundle.loadString('assets/restaurants.json'));
+        jsonDecode(await rootBundle.loadString('assets/services.json'));
     List<Service> services = [];
 
     for (var service in json) {
@@ -128,7 +130,7 @@ class _ListServicesState extends State<ListServices> {
             deliveryPrice: service.deliveryPrice,
             deliveryTime: service.deliveryTime,
             distance: service.distance,
-            foodType: service.foodType,
+            serviceType: service.serviceType,
             rating: service.rating,
           );
         },

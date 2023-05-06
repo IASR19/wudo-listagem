@@ -11,6 +11,7 @@ class HighlightCard extends StatelessWidget {
     required this.picture,
     required this.tip,
   });
+  Highlight({this.title, this.tip, this.picture});
 
   @override
   Widget build(BuildContext context) {

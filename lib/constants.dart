@@ -7,4 +7,4 @@ const kBrandDarkerGrey = const Color(0xFF3F3E3E);
 const kBrandDarkenGrey = const Color(0xFFA6A29F);
 const kBrandRed = const Color(0XFFEA1d2C);
 const kRedLabelTextStyle = TextStyle(color: kBrandRed);
-const kFreeDeliveryText = 'Entrega Grátis';
+const kFreeDeliveryText = 'Deslocamento Grátis';

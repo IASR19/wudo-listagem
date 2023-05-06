@@ -1,26 +1,26 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:ifoodclone/constants.dart';
+import 'package:wudo/constants.dart';
 
 class ServiceCard extends StatelessWidget {
   final String name;
   final String picture;
   final String rating;
-  final String foodType;
+  final String serviceType;
   final String distance;
   final String deliveryTime;
   final String deliveryPrice;
   final Key key;
 
   ServiceCard({
-    required this.name,
-    required this.picture,
-    required this.rating,
-    required this.foodType,
-    required this.distance,
-    required this.deliveryTime,
-    required this.deliveryPrice,
-    required this.key,
+    this.name,
+    this.picture,
+    this.rating,
+    this.serviceType,
+    this.distance,
+    this.deliveryTime,
+    this.deliveryPrice,
+    this.key,
   });
 
   Widget _dotSeparator() {
@@ -46,7 +46,7 @@ class ServiceCard extends StatelessWidget {
           elevation: 2.5,
           child: Container(
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.grey.shade500),
+              border: Border.all(color: Colors.grey[200]),
               borderRadius: BorderRadius.all(
                 Radius.circular(4),
               ),
@@ -64,7 +64,7 @@ class ServiceCard extends StatelessWidget {
                         shape: BoxShape.circle,
                         border: Border.all(
                           width: 1.0,
-                          color: Colors.grey.shade200,
+                          color: Colors.grey[200],
                         ),
                       ),
                       child: ClipOval(
@@ -121,7 +121,7 @@ class ServiceCard extends StatelessWidget {
                             ),
                             _dotSeparator(),
                             Text(
-                              foodType,
+                              serviceType,
                               style: TextStyle(
                                 color: Colors.black54,
                                 fontSize: 13,
