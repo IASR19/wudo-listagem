@@ -1,38 +1,38 @@
 [
   {
     "name": "Oficina do Paulinho Loko",
-    "picture": "https://cdn.pixabay.com/photo/2014/06/04/16/36/man-362150_1280.jpg",
+    "picture": "https://cdn.pixabay.com/photo/2015/12/24/12/59/mechanic-1106773_1280.jpg",
     "rating": "4.5",
-    "serviceType": "Mecânico Automotivo",
+    "serviceType": "Manutenção",
     "distance": "0,6 km",
-    "deliveryTime": "Horários Disponíveis",
-    "deliveryPrice": "Manutenção / Prevenção"
+    "deliveryTime": "Agenda Disponível",
+    "deliveryPrice": "Mecânica / Prevenção"
   },
   {
-    "name": "Oriental Light",
-    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_thumbnail/logosgde/fb6fe86f-7f5e-4f4d-a074-9d119b03a0dc/201906241225_wDe9_i.jpg",
-    "rating": "Novo!",
-    "serviceType": "Saudável",
+    "name": "Unha Belezinha",
+    "picture": "https://cdn.pixabay.com/photo/2017/08/05/13/13/people-2583493_1280.jpg",
+    "rating": "Novo",
+    "serviceType": "Beleza",
     "distance": "0,4 km",
-    "deliveryTime": "45-55 min",
-    "deliveryPrice": "Entrega R$ 6.00"
+    "deliveryTime": "Agenda Disponível",
+    "deliveryPrice": "Manicure / Pedicure / Unha em Gel"
   },
   {
-    "name": "Santo Grau Bebidas",
-    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_thumbnail/logosgde/201902091123_f042d49a-92b1-489c-98c5-1e72f30538b4.jpg",
+    "name": "Randararam",
+    "picture": "https://cdn.pixabay.com/photo/2018/05/15/09/01/foodora-3402507_1280.jpg",
     "rating": "4.9",
-    "serviceType": "Bebidas",
+    "serviceType": "Delivery",
     "distance": "0,8 km",
-    "deliveryTime": "50-60 min",
-    "deliveryPrice": "Entrega Grátis"
+    "deliveryTime": "Agenda Disponível",
+    "deliveryPrice": "Delivery / Viagens"
   },
   {
-    "name": "Paladare",
-    "picture": "https://static-images.ifood.com.br/image/upload/f_auto,t_thumbnail/logosgde/201906261754_22d601f8-7f8e-4850-acd7-eb8cf785376c.png",
+    "name": "Te dou aulinha",
+    "picture": "https://cdn.pixabay.com/photo/2017/10/05/19/39/differential-calculus-2820657_640.jpg",
     "rating": "Novo!",
-    "serviceType": "Italiana",
+    "serviceType": "Aulas",
     "distance": "0,5 km",
-    "deliveryTime": "50-60 min",
-    "deliveryPrice": "Entrega R$ 7.00"
+    "deliveryTime": "Agenda Indisponível",
+    "deliveryPrice": "Matemática / Português / Biologia"
   }
 ]
