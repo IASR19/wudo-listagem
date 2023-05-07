@@ -11,8 +11,9 @@ class MyApp extends StatelessWidget {
       color: Colors.white,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.red,
-        brightness: Brightness.light,
+        primarySwatch: Colors.blue,
+        brightness: Brightness.dark,
+        cardColor: Colors.blueGrey,
       ),
       initialRoute: ListServices.id,
       routes: {ListServices.id: (context) => ListServices()},

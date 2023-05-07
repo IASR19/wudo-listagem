@@ -17,8 +17,8 @@ class CategoryCard extends StatelessWidget {
     return Padding(
       key: key,
       padding: const EdgeInsets.only(
-        top: 8.0,
-        right: 8.0,
+        top: 10.0,
+        right: 20.0,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -27,7 +27,7 @@ class CategoryCard extends StatelessWidget {
             child: Container(
               width: 100,
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.blueGrey,
                 borderRadius: BorderRadius.circular(8.0),
               ),
               child: ClipRRect(
@@ -52,11 +52,11 @@ class CategoryCard extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 5.0,
+            height: 3.0,
           ),
           Text(
             name,
-            style: TextStyle(color: Colors.black54, fontSize: 12.0),
+            style: TextStyle(color: Colors.black, fontSize: 12.0),
           )
         ],
       ),

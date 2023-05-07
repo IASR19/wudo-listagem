@@ -26,27 +26,27 @@ class ServiceCard extends StatelessWidget {
   Widget _dotSeparator() {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.black54,
+        color: Colors.white,
         borderRadius: BorderRadius.circular(50),
       ),
-      margin: EdgeInsets.symmetric(horizontal: 4),
-      width: 3,
-      height: 3,
+      margin: EdgeInsets.symmetric(horizontal: 10),
+      width: 5,
+      height: 5,
     );
   }
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      color: Colors.black45, // background
       key: key,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 2.0),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 1.0),
         child: Card(
           elevation: 2.5,
           child: Container(
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.grey[200]),
+              border: Border.all(color: Colors.lightBlue.shade100),
               borderRadius: BorderRadius.all(
                 Radius.circular(4),
               ),
@@ -54,17 +54,17 @@ class ServiceCard extends StatelessWidget {
             child: Row(
               children: <Widget>[
                 Container(
-                  width: 80,
+                  width: 100,
                   child: Center(
                     child: Container(
-                      width: 50,
-                      height: 50,
+                      width: 80,
+                      height: 80,
                       decoration: BoxDecoration(
-                        color: Colors.white,
-                        shape: BoxShape.circle,
+                        color: Colors.blueGrey,
+                        shape: BoxShape.rectangle,
                         border: Border.all(
                           width: 1.0,
-                          color: Colors.grey[200],
+                          color: Colors.blueGrey,
                         ),
                       ),
                       child: ClipOval(
@@ -106,8 +106,8 @@ class ServiceCard extends StatelessWidget {
                           children: <Widget>[
                             Icon(
                               Icons.star,
-                              color: Colors.orangeAccent,
-                              size: 15.0,
+                              color: Colors.lightBlue.shade100,
+                              size: 20.0,
                             ),
                             SizedBox(
                               width: 3,
@@ -115,15 +115,15 @@ class ServiceCard extends StatelessWidget {
                             Text(
                               rating,
                               style: TextStyle(
-                                color: Colors.orangeAccent,
-                                fontSize: 13,
+                                color: Colors.lightBlue.shade100,
+                                fontSize: 15,
                               ),
                             ),
                             _dotSeparator(),
                             Text(
                               serviceType,
                               style: TextStyle(
-                                color: Colors.black54,
+                                color: Colors.black,
                                 fontSize: 13,
                               ),
                             ),
@@ -131,7 +131,7 @@ class ServiceCard extends StatelessWidget {
                             Text(
                               distance,
                               style: TextStyle(
-                                color: Colors.black54,
+                                color: Colors.white,
                                 fontSize: 13,
                               ),
                             )
@@ -145,7 +145,9 @@ class ServiceCard extends StatelessWidget {
                             Text(
                               deliveryTime,
                               style: TextStyle(
-                                color: Colors.black54,
+                                color: deliveryTime == kSemAgenda
+                                    ? Colors.redAccent.shade700
+                                    : Colors.white,
                                 fontSize: 12,
                               ),
                             ),
@@ -153,9 +155,7 @@ class ServiceCard extends StatelessWidget {
                             Text(
                               deliveryPrice,
                               style: TextStyle(
-                                color: deliveryPrice == kFreeDeliveryText
-                                    ? Colors.green
-                                    : Colors.black54,
+                                color: Colors.black,
                                 fontSize: 12,
                               ),
                             )

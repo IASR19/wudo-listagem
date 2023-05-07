@@ -1,13 +1,9 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:wudo/components/category_card.dart';
-// import 'package:wudo/components/highlight_card.dart';
 import 'package:wudo/components/service_card.dart';
-import 'package:wudo/constants.dart';
 import 'package:wudo/models/category.dart';
-// import 'package:wudo/models/highlight.dart';
 import 'package:wudo/models/service.dart';
 
 class ListServices extends StatefulWidget {
@@ -81,17 +77,18 @@ class _ListServicesState extends State<ListServices> {
       padding: const EdgeInsets.symmetric(vertical: 10.0),
       child: Container(
         height: 145,
-        color: Colors.white,
+        color: Colors.blueGrey,
         child: Padding(
           padding: const EdgeInsets.only(top: 10.0, left: 15.0, bottom: 10.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'Categories',
+                'Categorias:',
                 style: TextStyle(
-                  fontSize: 16.0,
-                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  fontSize: 15.0,
+                  fontWeight: FontWeight.w100,
                 ),
               ),
               Expanded(
@@ -143,14 +140,14 @@ class _ListServicesState extends State<ListServices> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.white,
+        color: Colors.black12,
         child: SafeArea(
           child: Container(
-            color: kBackgroundColor,
+            color: Colors.black54,
             child: CustomScrollView(
               slivers: <Widget>[
                 SliverAppBar(
-                  backgroundColor: Colors.white,
+                  backgroundColor: Colors.blueGrey,
                   expandedHeight: 80.0,
                   flexibleSpace: FlexibleSpaceBar(
                     background: Stack(
@@ -163,10 +160,10 @@ class _ListServicesState extends State<ListServices> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Text(
-                                'ENTREGAR EM',
+                                'Ambiente',
                                 textAlign: TextAlign.left,
                                 style: TextStyle(
-                                  color: kBrandDarkenGrey,
+                                  color: Colors.white,
                                   fontSize: 17.0,
                                 ),
                               ),
@@ -174,15 +171,15 @@ class _ListServicesState extends State<ListServices> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: <Widget>[
                                   Text(
-                                    'Av. Brasil, 123',
+                                    'Contratante',
                                     style: TextStyle(
-                                        color: kBrandDarkerGrey,
+                                        color: Colors.white38,
                                         fontSize: 18.0,
                                         fontWeight: FontWeight.w500),
                                   ),
                                   Icon(
                                     Icons.keyboard_arrow_down,
-                                    color: kBrandRed,
+                                    color: Colors.blue,
                                     size: 18.0,
                                   )
                                 ],
@@ -199,25 +196,26 @@ class _ListServicesState extends State<ListServices> {
                   floating: false,
                   delegate: _SliverAppBarDelegate(
                     AppBar(
-                      backgroundColor: Colors.white,
+                      backgroundColor: Colors.blueGrey,
                       elevation: 0.0,
                       centerTitle: false,
                       title: Container(
                         decoration: BoxDecoration(
-                          color: kBrandGrey,
+                          color: Colors.black54,
                           borderRadius: BorderRadius.circular(4.0),
                         ),
                         child: TextField(
+                          cursorColor: Colors.blue,
                           decoration: InputDecoration(
                             icon: Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Icon(
-                                Icons.search,
-                                color: kBrandRed,
+                                Icons.search_rounded,
+                                color: Colors.black54,
                               ),
                             ),
-                            hintText: 'Prato ou servicee',
-                            hintStyle: TextStyle(color: kBrandDarkGrey),
+                            hintText: 'Busque',
+                            hintStyle: TextStyle(color: Colors.blueGrey),
                             border: InputBorder.none,
                           ),
                         ),
@@ -226,13 +224,10 @@ class _ListServicesState extends State<ListServices> {
                         Padding(
                           padding: const EdgeInsets.only(right: 10.0),
                           child: Center(
-                            child: Text(
-                              'Filtros',
-                              style: TextStyle(
-                                color: kBrandRed,
-                                fontSize: 16.0,
+                              child: Icon(
+                                Icons.filter_alt,
+                                color: Colors.black54,
                               ),
-                            ),
                           ),
                         )
                       ],
@@ -248,9 +243,9 @@ class _ListServicesState extends State<ListServices> {
                           height: 200.0,
                           child: Center(
                             child: CircularProgressIndicator(
-                              strokeWidth: 5,
+                              strokeWidth: 10,
                               valueColor:
-                                  AlwaysStoppedAnimation<Color>(Colors.red),
+                                  AlwaysStoppedAnimation<Color>(Colors.blueGrey),
                             ),
                           ),
                         ),
@@ -264,14 +259,15 @@ class _ListServicesState extends State<ListServices> {
                   SliverList(
                     delegate: SliverChildListDelegate([
                       Container(
-                        color: Colors.white,
+                        color: Colors.black26,
                         child: Padding(
-                          padding: const EdgeInsets.all(15.0),
+                          padding: const EdgeInsets.all(10.0),
                           child: Text(
-                            'Restaurantes',
+                            'Catálogo de Serviços:',
                             style: TextStyle(
-                              fontSize: 16.0,
-                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              fontSize: 15.0,
+                              fontWeight: FontWeight.w100,
                             ),
                           ),
                         ),
@@ -287,24 +283,24 @@ class _ListServicesState extends State<ListServices> {
       ),
       bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
-          unselectedItemColor: Colors.black45,
-          selectedItemColor: Colors.black87,
+          unselectedItemColor: Colors.white,
+          selectedItemColor: Colors.white,
           showUnselectedLabels: true,
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(Icons.home_max),
               label: 'Início',
             ),
-            BottomNavigationBarItem(
+            /*BottomNavigationBarItem(
               icon: Icon(Icons.search),
               label: 'Busca',
+            ),*/
+            BottomNavigationBarItem(
+              icon: Icon(Icons.history),
+              label: 'Histórico',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.description),
-              label: 'Pedidos',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.person_outline),
+              icon: Icon(Icons.person),
               label: 'Perfil',
             ),
           ]),
