@@ -3,11 +3,11 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:wudo/components/category_card.dart';
-import 'package:wudo/components/highlight_card.dart';
+// import 'package:wudo/components/highlight_card.dart';
 import 'package:wudo/components/service_card.dart';
 import 'package:wudo/constants.dart';
 import 'package:wudo/models/category.dart';
-import 'package:wudo/models/highlight.dart';
+// import 'package:wudo/models/highlight.dart';
 import 'package:wudo/models/service.dart';
 
 class ListServices extends StatefulWidget {

@@ -1,9 +1,9 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=C:\DEV\flutter"
-export "FLUTTER_APPLICATION_PATH=C:\Users\itama\OneDrive\Área de Trabalho\Listagem\Flutter-ifood"
+export "FLUTTER_ROOT=/home/igsr/snap/flutter/common/flutter"
+export "FLUTTER_APPLICATION_PATH=/home/igsr/Área de Trabalho/wudo/front/wudo-listagem"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
-export "FLUTTER_TARGET=lib\main.dart"
+export "FLUTTER_TARGET=lib/main.dart"
 export "FLUTTER_BUILD_DIR=build"
 export "FLUTTER_BUILD_NAME=1.0.0"
 export "FLUTTER_BUILD_NUMBER=1"
