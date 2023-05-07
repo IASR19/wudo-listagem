@@ -1,12 +1,12 @@
 [
   {
     "name": "Oficina do Paulinho Loko",
-    "picture": "https://drive.google.com/file/d/18GibnSk6QxZjrtlA6_1juHprwQex12aP/view?usp=sharing",
+    "picture": "https://cdn.pixabay.com/photo/2014/06/04/16/36/man-362150_1280.jpg",
     "rating": "4.5",
-    "serviceType": "Italiana",
+    "serviceType": "Mecânico Automotivo",
     "distance": "0,6 km",
-    "deliveryTime": "35-45 min",
-    "deliveryPrice": "Entrega R$ 5.90"
+    "deliveryTime": "Horários Disponíveis",
+    "deliveryPrice": "Manutenção / Prevenção"
   },
   {
     "name": "Oriental Light",
