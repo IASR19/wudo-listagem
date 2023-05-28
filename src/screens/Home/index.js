@@ -1,68 +1,46 @@
 import React from 'react';
-import {StyleSheet, Platform} from 'react-native'
-import {Entypo} from '@expo/vector-icons'
+import { StyleSheet, Platform } from 'react-native'
+import { Entypo } from '@expo/vector-icons'
 
-import {Wrapper,
-        Container,
-        Header,
-        ButtonDelivery,
-        ButtonWithdrawal,
-        ButtonDeliveryLabel,
-        ButtonWithdrawalLabel,
-        Location,
-        LocationInfo,
-        ButtonArrowDown
-    } from './styles.js'
+import {
+    Wrapper,
+    Container,
+    Header,
+    ButtonDelivery,
+    ButtonWithdrawal,
+    ButtonDeliveryLabel,
+    ButtonWithdrawalLabel,
+    ButtonArrowDown
+} from './styles.js'
 
-import Coupon from '../../components/Coupon/index.js'
+// import Coupon from '../../components/Coupon/index.js'
 import FoodOptions from '../../components/FoodOptions/index.js'
-import FreeDelivery from '../../components/FreeDelivery/index.js'
-import OpenOnly from '../../components/OpenOnly/index.js'
 import BannerSelectRestaurant from '../../components/BannerSelectRestaurant/index.js'
 import Restaurants from '../../components/Restaurants/index.js'
 
 const Home = () => {
-    return(
+    return (
         <Wrapper style={styles.container}>
-           
+
             <Container>
 
                 <Header>
 
                     <ButtonDelivery>
 
-                        <ButtonDeliveryLabel>Entrega</ButtonDeliveryLabel>
+                        <ButtonDeliveryLabel>Busco serviços</ButtonDeliveryLabel>
 
                     </ButtonDelivery>
 
                     <ButtonWithdrawal>
 
-                        <ButtonWithdrawalLabel>Retirada</ButtonWithdrawalLabel>
+                        <ButtonWithdrawalLabel>Oferto serviços</ButtonWithdrawalLabel>
 
                     </ButtonWithdrawal>
 
                 </Header>
 
-                <Location>
-
-                    <LocationInfo>Próximo Riacho Fundo,
-                            QN 1</LocationInfo>
-
-                    <ButtonArrowDown>
-
-                        <Entypo name="chevron-down" size={18} color ="#ff0000" />
-
-                    </ButtonArrowDown>
-
-                </Location>
-
-                <Coupon />
-
                 <FoodOptions />
-
-                <FreeDelivery />
-
-                <OpenOnly />
 
                 <BannerSelectRestaurant />
 
@@ -75,7 +53,7 @@ const Home = () => {
 }
 
 const styles = StyleSheet.create({
-    container:{
+    container: {
         paddingTop: Platform.OS === 'android' ? 60 : 0
     }
 })
