@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, Platform} from 'react-native'
-import {Feather} from '@expo/vector-icons'
+import {Feather, Foundation} from '@expo/vector-icons'
 
 import {Container, SearchSpace, IconSearch, BlockInputSearch, SearchInput} from './styles.js'
 
@@ -18,11 +18,11 @@ export default function Search(){
 
                     <IconSearch>
 
-                        <Feather name="search" size={24} color="#ff0000" />
+                        <Foundation name="page-search" size={24} color="#2828d1" />
 
                     </IconSearch>
 
-                    <SearchInput placeholder="Item ou loja" placeholderTextColor="#9c9898" />
+                    <SearchInput placeholder="O que deseja?" placeholderTextColor="#bfbfe0" />
 
                 </BlockInputSearch>
 

@@ -3,8 +3,10 @@ import styled from 'styled-components/native';
 export const Container = styled.ScrollView``;
 
 export const SearchSpace = styled.View`
-    align-items:center;
+    align-items:left;
     margin-top:15px;
+    margin-left: 15px;
+    
 `;
 
 export const IconSearch = styled.TouchableOpacity``;

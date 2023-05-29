@@ -5,7 +5,7 @@ import {MaterialCommunityIcons, Entypo} from '@expo/vector-icons'
 import {Container,  Option, BlockInfo, Infos, TitleOption, InfoOption} from './styles.js'
 
 const items = [
-    {
+    /*{
         key: String(Math.random()),
         title:'Chats',
         info:'Minhas Conversas',
@@ -40,19 +40,8 @@ const items = [
     },
     {
         key: String(Math.random()),
-        title:'Cupons',
-        info:'Meus cupons de desconto',
-        icon:{
-            lib: MaterialCommunityIcons,
-            name: 'ticket-outline',
-            size: 27,
-            color:"#424040",
-        },
-    },
-    {
-        key: String(Math.random()),
         title:'Favoritos',
-        info:'Meus Locais Favoritos',
+        info:'Meus Favoritos',
         icon:{
             lib: MaterialCommunityIcons,
             name: 'heart-outline',
@@ -81,7 +70,7 @@ const items = [
             size: 27,
             color:"#424040",
         },
-    },
+    },*/
     
 ]
 

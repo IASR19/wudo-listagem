@@ -17,7 +17,7 @@ export const Header = styled.View`
 `;
 
 export const ButtonDelivery = styled.TouchableOpacity`
-    border-bottom-color: #ff0000;
+    border-bottom-color: #2828d1;
     border-bottom-width: 1px;
     border-style:solid;
     padding-bottom:0px;
@@ -30,7 +30,7 @@ export const ButtonWithdrawal = styled.TouchableOpacity`
 
 export const ButtonDeliveryLabel = styled.Text`
     font-size:17px;
-    color:#ff0000;
+    color:#2828d1;
     padding-bottom:5px;
 `;
 

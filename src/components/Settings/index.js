@@ -5,7 +5,7 @@ import {AntDesign, Entypo} from '@expo/vector-icons'
 import {Container, Option, Infos, TitleOption} from './styles.js';
 
 const items = [
-    {
+    /*{
         key: String(Math.random()),
         title: 'Ajuda',
         icon:{
@@ -54,7 +54,7 @@ const items = [
             size:24,
             color:'#808080',
         }
-    },
+    },*/
 ]
 
 export default function Settings(){

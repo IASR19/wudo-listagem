@@ -1,142 +1,105 @@
 import React from 'react';
-import {Entypo, MaterialCommunityIcons, FontAwesome} from '@expo/vector-icons'
+import { Entypo, MaterialCommunityIcons, FontAwesome, AntDesign } from '@expo/vector-icons'
 
-import nathely from '../../images/nathely.jpg';
-import pizzacesar from '../../images/pizzacesar.jpg';
-import vinhoecia from '../../images/vinhoecia.jpg';
-import antonnella from '../../images/antonnella.jpg';
-import coreto from '../../images/coreto.jpg';
-import sushiloko from '../../images/sushiloko.png'
+import {
+    ContainerFilters,
+    Title,
+    Filters,
+    OptionsFilter,
+    TitleOptionsFilter,
+    Option,
+    TitleFilter,
 
-
-import {ContainerFilters,
-        Title,
-        Filters,
-        OptionsFilter,
-        TitleOptionsFilter,
-        Option,
-        TitleFilter,
-
-        ContainerServiceplaces,
-        OptionServiceplace,
-        Img,
-        InfoServiceplacees,
-        InfoLineOne,
-        Name,
-        InfoLineTwo,
-        Noute,
-        AddInfoOne,
-        InfoLineThree,
-        AddInfoTwo
-    } from './styles.js'
+    ContainerServiceplaces,
+    OptionServiceplace,
+    Img,
+    InfoServiceplacees,
+    InfoLineOne,
+    Name,
+    InfoLineTwo,
+    Noute,
+    AddInfoOne,
+    InfoLineThree,
+    AddInfoTwo
+} from './styles.js'
 
 const ButtonsFilter = [
     {
         key: String(Math.random()),
-        name: 'Tipo de Loja'
-    },
-
-    {
-        key: String(Math.random()),
-        name: 'Entrega Grátis'
-    },
-
-    {
-        key: String(Math.random()),
-        name: 'Ordenar'
+        name: 'Tipo de Serviço'
     },
 
     {
         key: String(Math.random()),
         name: 'Distância'
     },
-    {
-        key: String(Math.random()),
-        name: 'Entrega iFood'
-    },
-    {
-        key: String(Math.random()),
-        name: 'Super Serviceplacee'
-    },
+
 ]
 
-const BlocksServiceplaces  = [
+const BlocksServiceplaces = [
     {
         key: String(Math.random()),
-        img: nathely,
-        name: 'Nathely Pizza Express',
+        img: "https://cdn.pixabay.com/photo/2015/12/24/12/59/mechanic-1106773_1280.jpg",
+        name: 'Oficina Confia',
         noute: '4.6 ',
-        infoOne: '| Pizza | 4,5 Km',
-        infoTwo: '55-65 min | R$ 5,00'
+        infoOne: '| Eletrecista | Santa Rita do Sapucaí - MG',
+        infoTwo: 'Instalações elétrica | Manutenções'
     },
     {
         key: String(Math.random()),
-        img: pizzacesar,
-        name: 'Pizza Cesar',
+        img: "https://cdn.pixabay.com/photo/2017/08/05/13/13/people-2583493_1280.jpg",
+        name: 'Unha Belezinha',
         noute: '4.5 ',
-        infoOne: '| Pizza | 5,1 Km',
-        infoTwo: '68-78 min | R$ 8,90'
+        infoOne: '| Manicure | Santa Rita do Sapucaí - MG',
+        infoTwo: 'Manicure | Pedicure | Unha em Gel'
     },
     {
         key: String(Math.random()),
-        img: vinhoecia,
-        name: 'Vinho&Cia',
+        img: "https://cdn.pixabay.com/photo/2018/05/15/09/01/foodora-3402507_1280.jpg",
+        name: 'Randararam',
         noute: '5.0 ',
-        infoOne: '| Bebidas | 1,7 Km',
-        infoTwo: '60-70 min | R$ 9,00'
+        infoOne: '| Entregador | Santa Rita do Sapucaí - MG',
+        infoTwo: 'Delivery | Viagens'
     },
     {
         key: String(Math.random()),
-        img: antonnella,
-        name: 'Pizzaria Antonnella',
-        noute: '5.0 ',
-        infoOne: '| Pizza | 5 Km',
-        infoTwo: '45-55 min | Grátis'
+        img: "https://cdn.pixabay.com/photo/2017/10/05/19/39/differential-calculus-2820657_640.jpg",
+        name: 'Te dou aulinha',
+        noute: '3.7 ',
+        infoOne: '| Professor | Pouso Alegre - MG',
+        infoTwo: 'Presencial | Remoto | Matemática | Biologia'
     },
-    {
-        key: String(Math.random()),
-        img: coreto,
-        name: 'Coreto',
-        noute: '4.9 ',
-        infoOne: '| Lanches | 2,3 Km',
-        infoTwo: '40-50 min | R$ 4,00'
-    },
-    {
-        key: String(Math.random()),
-        img: sushiloko,
-        name: 'Sushiloko',
-        noute: '4.1 ',
-        infoOne: '| Japonesa | 2,6 Km',
-        infoTwo: '60-70 min | R$ 7,99'
-    },
-    
+
 ]
 
-export default function Serviceplaces(){
-    return(
+export default function Serviceplaces() {
+    return (
         <>
             <ContainerFilters>
 
-                <Title>Serviceplacees</Title>
 
                 <Filters>
-
-                    <OptionsFilter>
-
-                        <TitleOptionsFilter>Filtros</TitleOptionsFilter>
-                        <MaterialCommunityIcons name="filter-variant" size={24} color="#6e6e6e" />
-
-                    </OptionsFilter>
 
                     {ButtonsFilter.map((item) => (
                         <Option key={item.key}>
 
                             <TitleFilter>{item.name}</TitleFilter>
-                            <Entypo name="chevron-down" size={18} color ="#6e6e6e" />
+                            <Entypo name="chevron-down" size={18} color="#6e6e6e" />
                         </Option>
                     ))}
 
+
+                    <OptionsFilter>
+
+                        <TitleOptionsFilter>Filtros</TitleOptionsFilter>
+                        <MaterialCommunityIcons name="filter" size={24} color="#6e6e6e" />
+
+                    </OptionsFilter>
+
+
                 </Filters>
+
+                {/*<Title>Catálogo de Serviços: </Title>*/}
 
             </ContainerFilters>
 
@@ -177,7 +140,7 @@ export default function Serviceplaces(){
 
             </ContainerServiceplaces>
 
-    
+
 
         </>
     )

@@ -3,30 +3,35 @@ import {ImageBackground, StyleSheet} from 'react-native';
 
 import {Container, ContainerGeneral,Title, ContainerLeft, OptionsColumnLeft, OptionLeft, LabelLeft, ContainerRight, OptionsColumnRight, OptionRight, LabelRight} from './styles.js';
 
-import doceseBolos from '../../images/categoriesDoceseBolos.jpg'
-import acai from '../../images/categoriesAcai.jpg'
-import cafeteria from '../../images/categoriesCafeteria.jpg'
+//adjust elements in search sheet
+
+// left
+import eletrecista from '../../images/eletrecista.jpg'
+import barbeiro from '../../images/barbeiro.jpg'
 
 
-import lanches from '../../images/categoriesLanches.jpg';
-import mercado from '../../images/categoriesMercado.jpg';
-import mexicana from '../../images/categoriesMexicana.jpg';
+// right
+import entregador from '../../images/entregador.jpg';
+import manicure from '../../images/manicure.jpg';
+import professor from '../../images/Professor.jpg';
+
+
 
 const itemsLeft = [
     {
         key: String(Math.random()),
-        img: doceseBolos,
-        label: 'Doces e Bolos'
+        img: eletrecista,
+        label: 'Eletrecista'
     },
     {
         key: String(Math.random()),
-        img: acai,
-        label: 'Açaí'
+        img: barbeiro,
+        label: 'Barbeiro'
     },
     {
         key: String(Math.random()),
-        img: cafeteria,
-        label: 'Cafeteria'
+        img: professor,
+        label: 'Professor'
     },
 
 ]
@@ -34,20 +39,16 @@ const itemsLeft = [
 const itemsRight = [
     {
         key: String(Math.random()),
-        img: lanches,
-        label: 'Lanches'
+        img: entregador,
+        label: 'Entregador'
     },
     {
         key: String(Math.random()),
-        img: mercado,
-        label: 'Mercado'
+        img: manicure,
+        label: 'Manicure'
     },
-    {
-        key: String(Math.random()),
-        img: mexicana,
-        label: 'Mexicana'
-    },
-    
+
+
 ]
 
 export default function Categories(){
@@ -55,7 +56,7 @@ export default function Categories(){
 
         <Container>
 
-            <Title>Categorias</Title>
+          {/*  <Title>Categorias</Title>*/}
 
             <ContainerGeneral>
 
@@ -69,13 +70,14 @@ export default function Categories(){
                             <OptionLeft key={itemLeft.key}>
 
                                 <ImageBackground source={itemLeft.img} style={styles.imageBackground}>
-
+                                
+                                    
                                     <LabelLeft>{itemLeft.label}</LabelLeft>
 
                                 </ImageBackground>
 
                             </OptionLeft>
-                        ))}
+                        ))} 
 
                     </OptionsColumnLeft>
 

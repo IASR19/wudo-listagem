@@ -9,20 +9,20 @@ export const Header = styled.TouchableOpacity`
     padding-top:20px;
     padding-bottom:12px;
     justify-content:space-between;
-    border-bottom-color:#c4c2c2;
+    border-bottom-color:#2828d1;
     border-bottom-width:0.5px;
-    border-style: solid;
+    border-style: groove;
 `;
 
 export const HeaderInfos = styled.View`
-    flex-direction:row;
-    align-items:center;
+    flex-direction:left;
+    align-items:left;
 `;
 
 export const Img = styled.Image`
-    width:60px;
-    height:60px;
-    border-radius:30px;
+    width:80px;
+    height:80px;
+    border-radius:40px;
 `;
 
 export const Infos = styled.View`
@@ -32,6 +32,7 @@ export const Infos = styled.View`
 export const Name = styled.Text`
     font-weight:bold;
     font-size:18px;
+    color: #2828d1;
 `;
 
 export const EditProfile = styled.Text`

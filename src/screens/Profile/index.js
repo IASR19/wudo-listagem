@@ -5,7 +5,7 @@ import {Entypo} from '@expo/vector-icons';
 
 import {Container, Header, HeaderInfos, Img, Infos, Name, EditProfile} from './styles.js'
 
-import fotoDePerfil from '../../images/fotoPerfil.jpeg';
+import fotoDePerfil from '../../images/itamarzin.jpeg';
 
 import Present from '../../components/Present/index.js'
 import OptionsApp from '../../components/OptionsApp/index.js'
@@ -23,7 +23,7 @@ export default function Profile(){
 
                     <Infos>
 
-                        <Name>Victor Hugo Guirra</Name>
+                        <Name>Itamar Ribeiro</Name>
                         <EditProfile>Editar Perfil</EditProfile>
                         
                     </Infos>

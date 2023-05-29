@@ -8,15 +8,16 @@ export const Container = styled.ScrollView.attrs(() => ({
 export const ContainerGeneral = styled.View`
     flex-direction:row;
     margin-top:20px;
-    justify-content:center;
+    justify-content:side;
+    margin-left: 15px;
 `;
 
-export const Title = styled.Text`
+/*export const Title = styled.Text`
     font-weight:bold;
     margin-top:30px;
     font-size:18px;
-    margin-left:15px;
-`;
+    
+`;*/
 
 export const ContainerLeft = styled.View`
 `;
@@ -31,9 +32,13 @@ export const OptionLeft = styled.TouchableOpacity`
     margin-bottom:20px;
 `;
 
+
 export const LabelLeft = styled.Text`
-    color:#fff;
+    color:#FFFFFF;
     font-weight:bold;
+    /*text-shadow: 4px 4px 10px;*/
+    -webkit-text-stroke: 1px #000000;
+    text-stroke: 8px #000000;
 `;
 
 export const ContainerRight = styled.View``;
@@ -49,6 +54,7 @@ export const OptionRight = styled.TouchableOpacity`
 `;
 
 export const LabelRight = styled.Text`
-    color:#fff;
+    color:#FFFFFF;
     font-weight:bold;
+    text-shadow: 2px 2px 10px #000000;
 `;

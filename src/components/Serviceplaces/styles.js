@@ -9,7 +9,9 @@ export const ContainerFilters = styled.View`
 export const Title = styled.Text`
     font-size:18px;
     font-weight:bold;
-    color:#363636
+    margin-top:15px;
+    text-decoration: underline #2828d1;
+    color:#2828d1
 `;
 
 export const Filters = styled.ScrollView.attrs(() => ({
@@ -22,11 +24,11 @@ export const Filters = styled.ScrollView.attrs(() => ({
 
 export const OptionsFilter = styled.TouchableOpacity`
     flex-direction:row;
-    border-color:#6e6e6e;
+    border-color:#2828d1;
     border-width:0.4px;
-    border-style:solid;
+    border-style:inset;
     padding:7px 9px;
-    border-radius:30px;
+    border-radius:10px;
     height:35px;
     align-items:center;
     justify-content:center;
@@ -35,18 +37,18 @@ export const OptionsFilter = styled.TouchableOpacity`
 `;
 
 export const TitleOptionsFilter = styled.Text`
-    color:#6e6e6e;
+    color:#2828d1;
     font-size:15px;
     margin-right:8px;
 `;
 
 export const Option = styled.TouchableOpacity`
     flex-direction:row;
-    border-color:#6e6e6e;
+    border-color:#2828d1;
     border-width:0.4px;
-    border-style:solid;
-    padding:7px 10px;
-    border-radius:30px;
+    border-style:inset;
+    padding:7px 9px;
+    border-radius:10px;
     height:35px;
     align-items:center;
     justify-content:center;
@@ -55,7 +57,7 @@ export const Option = styled.TouchableOpacity`
 `;
 
 export const TitleFilter = styled.Text`
-    color:#6e6e6e;
+    color:#2828d1;
     font-size:15px;
     margin-right:8px;
 `;

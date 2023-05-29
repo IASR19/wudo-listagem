@@ -6,6 +6,8 @@ import eletrecista from '../../images/eletrecista.jpg'
 import barbeiro from '../../images/barbeiro.jpg'
 import entregador from '../../images/entregador.jpg'
 import manicure from '../../images/manicure.jpg'
+import professor from '../../images/Professor.jpg'
+
 
 
 const items = [
@@ -27,7 +29,12 @@ const items = [
     {
         key: String(Math.random()),
         img: manicure,
-        label: 'Manicure / Pedicure',
+        label: 'Manicure',
+    },
+    {
+        key: String(Math.random()),
+        img: professor,
+        label: 'Professor',
     },
 ]
 
