@@ -40,7 +40,7 @@ export default function Navigation(){
             })}
             tabBarOptions={{
                 style:{
-                    backgroundColor: '#fff',
+                    backgroundColor: '#bfbfe0',
                 },
                 activeTintColor:'#1d1d82',
                 inactiveTintColor:'#6969fa'

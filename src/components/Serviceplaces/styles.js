@@ -60,17 +60,19 @@ export const TitleFilter = styled.Text`
     margin-right:8px;
 `;
 
-export const ContainerRestaurants = styled.View`
-    align-items:center;
+export const ContainerServiceplaces = styled.View`
+    align-items:left;
+    margin-left:15px;
+    
 `;
 
-export const OptionRestaurant = styled.TouchableOpacity`
-    border-color:#bfb8b8;
+export const OptionServiceplace = styled.TouchableOpacity`
+    border-color:#2828d1;
     border-width:0.3px;
-    border-style:solid;
-    width:330px;
+    border-style:inset;
+    width:500px;
     height:100px;
-    border-radius:7px;
+    border-radius:10px;
     flex-direction:row;
     align-items:center;
     justify-content:space-between;
@@ -86,9 +88,9 @@ export const Img = styled.Image`
     border-radius:30px;
 `;
 
-export const InfoRestaurantes = styled.View`
+export const InfoServiceplacees = styled.View`
     justify-content:space-between
-    width:160px;
+    width:330px;
     height:65px;
 `;
 
@@ -97,6 +99,7 @@ export const InfoLineOne = styled.View`
 
 export const Name = styled.Text`
     font-size:16px;
+    font-style:oblique;
 `;
 
 export const InfoLineTwo = styled.View`
@@ -106,12 +109,12 @@ export const InfoLineTwo = styled.View`
 `;
 
 export const Noute = styled.Text`
-    color:#E5A34C;
+    color:#2828d1;
     margin-left:5px;
 `;
 
 export const AddInfoOne = styled.Text`
-    color:#868686;
+    color:#2828d1;
 `
 
 export const InfoLineThree = styled.View`
@@ -119,5 +122,6 @@ export const InfoLineThree = styled.View`
 `;
 
 export const AddInfoTwo = styled.Text`
-    color:#868686;
+    color:#2828d1;
 `;
+

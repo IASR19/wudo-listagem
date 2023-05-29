@@ -6,22 +6,11 @@ import {Container, ContainerGeneral,Title, ContainerLeft, OptionsColumnLeft, Opt
 import doceseBolos from '../../images/categoriesDoceseBolos.jpg'
 import acai from '../../images/categoriesAcai.jpg'
 import cafeteria from '../../images/categoriesCafeteria.jpg'
-import carnes from '../../images/categoriesCarnes.jpg'
-import frutosDoMar from '../../images/categoriesFrutosdoMar.jpg'
-import hotDog from '../../images/categoriesHotDog.jpg';
-import iceCream from '../../images/categoriesIceCream.jpg';
-import italiana from '../../images/categoriesItaliana.jpg';
-import japonesa from '../../images/categoriesJaponesa.jpg';
+
 
 import lanches from '../../images/categoriesLanches.jpg';
 import mercado from '../../images/categoriesMercado.jpg';
 import mexicana from '../../images/categoriesMexicana.jpg';
-import padaria from '../../images/categoriesPadaria.jpg';
-import pizza from '../../images/categoriesPizza.jpg';
-import refrigerantes from '../../images/categoriesRefrigerantes.jpg';
-import salgados from '../../images/categoriesSalgados.jpg';
-import saudavel from '../../images/categoriesSaudavel.jpg';
-import sopaseCaldos from '../../images/categoriesSopaseCaldos.jpg';
 
 const itemsLeft = [
     {
@@ -39,36 +28,7 @@ const itemsLeft = [
         img: cafeteria,
         label: 'Cafeteria'
     },
-    {
-        key: String(Math.random()),
-        img: carnes,
-        label: 'Carnes'
-    },
-    {
-        key: String(Math.random()),
-        img: frutosDoMar,
-        label: 'Frutos do Mar'
-    },
-    {
-        key: String(Math.random()),
-        img: iceCream,
-        label: 'Sorvetes'
-    },
-    {
-        key: String(Math.random()),
-        img: japonesa,
-        label: 'Japonesa'
-    },
-    {
-        key: String(Math.random()),
-        img: hotDog,
-        label: 'Hot Dog'
-    },
-    {
-        key: String(Math.random()),
-        img: italiana,
-        label: 'Italiana'
-    },
+
 ]
 
 const itemsRight = [
@@ -86,36 +46,6 @@ const itemsRight = [
         key: String(Math.random()),
         img: mexicana,
         label: 'Mexicana'
-    },
-    {
-        key: String(Math.random()),
-        img: padaria,
-        label: 'Padaria'
-    },
-    {
-        key: String(Math.random()),
-        img: pizza,
-        label: 'Pizza'
-    },
-    {
-        key: String(Math.random()),
-        img: refrigerantes,
-        label: 'Bebidas'
-    },
-    {
-        key: String(Math.random()),
-        img: salgados,
-        label: 'Salgados'
-    },
-    {
-        key: String(Math.random()),
-        img: saudavel,
-        label: 'Saudável'
-    },
-    {
-        key: String(Math.random()),
-        img: sopaseCaldos,
-        label: 'Sopas e Caldors'
     },
     
 ]

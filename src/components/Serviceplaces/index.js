@@ -17,10 +17,10 @@ import {ContainerFilters,
         Option,
         TitleFilter,
 
-        ContainerRestaurants,
-        OptionRestaurant,
+        ContainerServiceplaces,
+        OptionServiceplace,
         Img,
-        InfoRestaurantes,
+        InfoServiceplacees,
         InfoLineOne,
         Name,
         InfoLineTwo,
@@ -56,11 +56,11 @@ const ButtonsFilter = [
     },
     {
         key: String(Math.random()),
-        name: 'Super Restaurante'
+        name: 'Super Serviceplacee'
     },
 ]
 
-const BlocksRestaurants  = [
+const BlocksServiceplaces  = [
     {
         key: String(Math.random()),
         img: nathely,
@@ -112,12 +112,12 @@ const BlocksRestaurants  = [
     
 ]
 
-export default function Restaurants(){
+export default function Serviceplaces(){
     return(
         <>
             <ContainerFilters>
 
-                <Title>Restaurantes</Title>
+                <Title>Serviceplacees</Title>
 
                 <Filters>
 
@@ -140,14 +140,14 @@ export default function Restaurants(){
 
             </ContainerFilters>
 
-            <ContainerRestaurants>
+            <ContainerServiceplaces>
 
-                {BlocksRestaurants.map((item) => (
-                    <OptionRestaurant key={item.key}>
+                {BlocksServiceplaces.map((item) => (
+                    <OptionServiceplace key={item.key}>
 
                         <Img source={item.img} />
 
-                        <InfoRestaurantes>
+                        <InfoServiceplacees>
 
                             <InfoLineOne>
 
@@ -169,13 +169,13 @@ export default function Restaurants(){
 
                             </InfoLineThree>
 
-                        </InfoRestaurantes>
+                        </InfoServiceplacees>
 
-                    </OptionRestaurant>
+                    </OptionServiceplace>
 
                 ))}
 
-            </ContainerRestaurants>
+            </ContainerServiceplaces>
 
     
 

@@ -13,10 +13,8 @@ import {
     ButtonArrowDown
 } from './styles.js'
 
-// import Coupon from '../../components/Coupon/index.js'
-import FoodOptions from '../../components/FoodOptions/index.js'
-import BannerSelectRestaurant from '../../components/BannerSelectRestaurant/index.js'
-import Restaurants from '../../components/Restaurants/index.js'
+import ServiceOptions from '../../components/ServicesOptions/index.js'
+import Serviceplaces from '../../components/Serviceplaces/index.js'
 
 const Home = () => {
     return (
@@ -40,11 +38,9 @@ const Home = () => {
 
                 </Header>
 
-                <FoodOptions />
+                <ServiceOptions />
 
-                <BannerSelectRestaurant />
-
-                <Restaurants />
+                <Serviceplaces />
 
             </Container>
 
