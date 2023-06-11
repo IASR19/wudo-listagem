@@ -10,24 +10,27 @@ export const styles = {
     padding: "1rem",
     marginBottom: "1rem",
     borderRadius: "8px",
+    display: "flex",
+    alignItems: "center",
   },
   title: {
     textAlign: "center",
     marginBottom: "1rem",
   },
-
-    // ...
-    imageContainer: {
-      marginRight: "1rem",
-    },
-    image: {
-      width: "50px",
-      height: "50px",
-      borderRadius: "50%",
-    },
-    serviceInfo: {
-      flex: 1,
-    },
-    // ...
-
+  imageContainer: {
+    marginRight: "10px",
+  },
+  image: {
+    width: "100px",
+    height: "auto",
+    borderRadius: "8px",
+  },
+  serviceInfo: {
+    marginLeft: "10px",
+  },
+  starIcon: {
+    width: "16px", // Tamanho da imagem da estrela
+    height: "16px",
+    marginRight: "2px", // Espaçamento entre as estrelas
+  },
 };
