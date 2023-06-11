@@ -22,7 +22,7 @@ function ProfileImage() {
         variant="body1"
         sx={styles.userNameTextContainer}
       >
-        Nome do Usuário
+        Prof. Cristopher
       </Typography>
     </Box>
   );
