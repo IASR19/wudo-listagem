@@ -1,4 +1,7 @@
-export const styles = {
+import { CSSProperties } from "react";
+import { SxProps } from "@mui/system";
+
+export const styles: Record<string, SxProps | CSSProperties> = {
   containerCreateList: {
     marginTop: "2rem",
   },
@@ -29,8 +32,13 @@ export const styles = {
     marginLeft: "10px",
   },
   starIcon: {
-    width: "16px", // Tamanho da imagem da estrela
+    width: "16px",
     height: "16px",
-    marginRight: "2px", // Espaçamento entre as estrelas
+    marginRight: "2px",
+    marginBottom: "2px", // Adicionado estilo de margem inferior
+    color: "#2196f3",
+  },
+  ratingText: {
+    color: "#2196f3",
   },
 };
