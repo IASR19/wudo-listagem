@@ -4,7 +4,7 @@ import ProfileImage from "../../components/ProfileImage";
 import NavBar from "../../components/NavBar";
 
 import CreateButton from "../../components/CreateButton";
-import CreateList from "../../components/CreateList"; // Importe o componente CreateList
+import CreateList from "../../components/CreateList";
 
 import logo from "../../assets/images/logoWuDo.png";
 import ModalCreateService from "../../components/ModalCreateService";
@@ -33,16 +33,14 @@ function Home() {
     <Box sx={styles.homeContainer}>
       <Sidebar/>
 
-      {/* Components */}
       <Box sx={styles.componentsContainer}>
-        <CreateList /> {/* Adicione o componente CreateList aqui */}
+        <CreateList /> 
       </Box>
 
-      {/* BOTAO +--- */}
       <Box>
         <CreateButton openModal={openModal} />
       </Box>
-      {/* POP UP */}
+      
       <ModalCreateService closeModal={closeModal} modalIsOpen={modalIsOpen} />
     </Box>
   );
