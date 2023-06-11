@@ -4,6 +4,7 @@ import ProfileImage from "../../components/ProfileImage";
 import NavBar from "../../components/NavBar";
 
 import CreateButton from "../../components/CreateButton";
+import CreateList from "../../components/CreateList"; // Importe o componente CreateList
 
 import logo from "../../assets/images/logoWuDo.png";
 import ModalCreateService from "../../components/ModalCreateService";
@@ -33,9 +34,9 @@ function Home() {
       <Sidebar/>
 
       {/* Components */}
-      <Box
-        sx={styles.componentsContainer}
-      ></Box>
+      <Box sx={styles.componentsContainer}>
+        <CreateList /> {/* Adicione o componente CreateList aqui */}
+      </Box>
 
       {/* BOTAO +--- */}
       <Box>
