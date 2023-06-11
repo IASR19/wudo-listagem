@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Typography } from "@mui/material";
 import StarIcon from "@mui/icons-material/Star";
 
@@ -29,26 +29,45 @@ const ServiceData: Service[] = [
 ];
 
 function CreateList() {
+  const [selectedService, setSelectedService] = useState<Service | null>(null);
+
+  function handleItemClick(service: Service) {
+    setSelectedService(service);
+  }
+
   return (
     <Box sx={styles.containerCreateList}>
       <Typography variant="h5" sx={styles.title}>
         Lista de Serviços
       </Typography>
       {ServiceData.map((service, index) => (
-        <Box key={index} sx={styles.createListCard}>
-          <Box sx={styles.imageContainer}>
-            <Box component="img" src={service.imageUrl} alt={`Imagem ${service.name}`} sx={styles.image} />
-          </Box>
-          <Box sx={styles.serviceInfo}>
-            <Typography variant="body1" fontWeight="bold">
-              {service.name}
-            </Typography>
-            <Box sx={{ display: "flex", alignItems: "center" }}>
-              <StarIcon sx={styles.starIcon} />
-              <Typography variant="body1" sx={styles.ratingText}>{service.rating}</Typography>
+        <div
+          key={index}
+          onClick={() => handleItemClick(service)}
+          style={{ cursor: "pointer" }}
+        >
+          <Box
+            sx={{
+              ...styles.createListCard,
+              transform: selectedService === service ? "scale(1.05)" : "scale(1)",
+            }}
+          >
+            <Box sx={styles.imageContainer}>
+              <Box component="img" src={service.imageUrl} alt={`Imagem ${service.name}`} sx={styles.image} />
+            </Box>
+            <Box sx={styles.serviceInfo}>
+              <Typography variant="body1" fontWeight="bold">
+                {service.name}
+              </Typography>
+              <Box sx={{ display: "flex", alignItems: "center" }}>
+                <StarIcon sx={styles.starIcon} />
+                <Typography variant="body1" sx={styles.ratingText}>
+                  {service.rating}
+                </Typography>
+              </Box>
             </Box>
           </Box>
-        </Box>
+        </div>
       ))}
     </Box>
   );
